@@ -1,0 +1,7 @@
+title: My HTML Docs
+description: A documentation site using HTML and Just the Docs
+theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
+
+# Optional
+color_scheme: light
