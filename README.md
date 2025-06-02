@@ -1,2 +1,2 @@
 # evotutorials
-Guías y tutoriales sobre Bioinformática para estudios evolutivos.
+Guías y tutoriales sobre bioinformática aplicado a estudios evolutivos.
