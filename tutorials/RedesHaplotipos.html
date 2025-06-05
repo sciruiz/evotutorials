@@ -1515,8 +1515,8 @@ acción también puede ser definida por medio de las pestañas en la parte
 superior <em>Session &gt; Set Working Directory &gt; Choose
 Directory</em>.</p>
 </blockquote>
-<div id="instalación-y-carga-de-paquetes" class="section level3">
-<h3>Instalación y carga de paquetes</h3>
+<div id="instalación-y-llamado-de-paquetes" class="section level3">
+<h3>Instalación y llamado de paquetes</h3>
 <p>Instalación de paquetes</p>
 <pre class="r"><code>#install.packages(&quot;BiocManager&quot;)
 #BiocManager::install(&quot;msa&quot;)
@@ -1707,6 +1707,7 @@ lobster_net</code></pre>
 <p>Para obtener la frecuencia de cada haplotipo</p>
 <pre class="r"><code>hap_freq &lt;- sapply(attr(lobster_haps, &quot;index&quot;), length)
 
+#Visualizamos
 hap_freq</code></pre>
 <pre><code>##  [1]  2  1  1  4  1  1  1  5  1  1  1  1  1  1  1  2  1  1  1  1  1  8  1  2  1
 ## [26]  6  1  7  2  1  1  1  1  1  1 23  4  1  2  1  1  2  1  1  2  1  1  1  1  1
@@ -1739,6 +1740,17 @@ plot(lobster_net,
      cex = 0.5,
      font = 1)
 dev.off()</code></pre>
+<p>Aclaración: Cuando el objetivo es estudiar lo que ocurre dentro de
+una población —por ejemplo, en análisis de diversidad genética o en la
+reconstrucción de redes de haplotipos—, no es recomendable incluir un
+grupo externo (como una especie distinta). Esto se debe a que las
+diferencias genéticas acumuladas entre la población de estudio y el
+grupo externo son generalmente muy amplias, lo que provocaría una
+separación artificial en dos grupos bien definidos. Este efecto
+enmascara la variación interna de la población, que es precisamente lo
+que se busca analizar. Por ello, en estudios de estructura o relaciones
+internas, el uso de grupos externos puede distorsionar la interpretación
+biológica de los resultados.</p>
 <div id="enlaces-recomendados" class="section level4">
 <h4>Enlaces recomendados</h4>
 <p><a href="https://besjournals-onlinelibrary-wiley-com.translate.goog/doi/full/10.1111/2041-210X.12969?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=es&amp;_x_tr_pto=tc">Paradis
