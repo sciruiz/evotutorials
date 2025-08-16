@@ -1477,14 +1477,15 @@ border-radius: 0px;
 
 <body>
 
-  <!-- Google Translate Widget Code goes here -->
-  <div id="google_translate_element"></div>
-  <script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  <div id="gtranslate"></div>
+  <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+  <script>
+  window.gtranslateSettings = {
+      "default_language":"es",
+      "languages":["en","es","fr","de","ja","zh-CN"],
+      "wrapper_selector":"#gtranslate"
   }
   </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   
 <div class="container-fluid main-container">
 
@@ -4913,5 +4914,6 @@ $(document).ready(function ()  {
 
 </body>
 </html>
+
 
 
