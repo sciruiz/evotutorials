@@ -1477,7 +1477,15 @@ border-radius: 0px;
 
 <body>
 
-
+  <div id="gtranslate"></div>
+  <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+  <script>
+  window.gtranslateSettings = {
+      "default_language":"en",
+      "languages":["en","es","fr","de","ja","zh-CN"],
+      "wrapper_selector":"#gtranslate"
+  }
+  </script>
 <div class="container-fluid main-container">
 
 
@@ -1837,3 +1845,4 @@ $(document).ready(function ()  {
 
 </body>
 </html>
+
